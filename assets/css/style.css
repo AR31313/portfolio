@@ -1,0 +1,151 @@
+h2,h3,h4,h5,h6 {
+  color: orange;
+  font-size:25px;
+}
+.fixed {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  line-height: 50px;
+  padding: 60px;
+  text-align: left;
+  background: #172c3f;
+  opacity: 90%;
+  color: rgb(255, 255, 255);
+}
+
+h7 {
+  font-size: 16px;
+  font-style: italic;
+}
+
+footer {
+  font-weight: bolder;
+  line-height: 50px;
+  text-align: left;
+  background: #172c3f;
+  opacity: 90%;
+  color: rgb(255, 255, 255);
+}
+/* Hide the resource links by default */
+.card-column .links {
+  display: none;
+  padding: 1% 0;
+}
+
+/* Display the links when the parent is in a hover state */
+.card-column:hover .links {
+  display: block;
+}
+li {
+  /* Set to display to inline with square inbetween them, spaced evenly througout the screen */
+  display: inline;
+  list-style-type: none;
+  font-size:30px;
+}
+
+#item-1 {
+background-color: #e01191;
+}
+
+#item-2 {
+background-color: #a71cd177;
+}
+
+#item-3 {
+background-color: #dce011;
+}
+
+#item-4 {
+background-color: #11e0cf;
+}
+
+#item-5 {
+background-color: #55e41c;
+}
+
+.mtcard {
+  border-width: 1px;
+  padding: 4px;
+  width: 100%;
+}
+
+.mtcard img {
+  width: 95%;
+}
+.box1{
+  display: flex;
+  max-width: 66vw;
+}
+
+.box2{
+  display: flex;
+  max-width: 66vw;
+}
+/* create our main grid with flexbox */
+.card-column{
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+}
+
+/* .justify-center {
+  justify-content: center;
+} */
+.smaller-pic img {
+  border-width: 1px;
+  padding: 1px;
+  width: 100px;
+}
+
+/* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
+.card-column {
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  padding: 1.5rem;
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+ 
+}
+
+/* make each code card a flexbox column to align and justify content within it */
+.code-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 20%;
+  padding: 2rem;
+  color: rgb(2, 2, 2);
+
+  /* outline is like border, but on the outside of the box instead of inside */
+  outline: 2px solid rgba(9, 116, 84, 0.466);
+  outline-offset: 2px;
+  transition: all 0.5s ease-in-out;
+} 
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+ @media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+} */
