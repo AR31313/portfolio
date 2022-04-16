@@ -1,156 +1,173 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>website</title>
+<title>AVI PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    <link rel="stylesheet" href="/assets/css/style.css">
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
+<body class="w3-black">
 
-<body>
-    <header>
-        <h1>
-            <div class="fixed">Hi, I'm AVI
-        </h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+ 
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-        <nav>
-            <ul>
-                <li id="item-1"><a href="https://www.anuranaskitchen.com/">Entrepreneur, </a></li>
-                <li id="item-2"><a href="https://github.com/AR31313">Web Developer, </a></li>
-                <li id="item-3"><a href="https://yay4avi.wixsite.com/gisportfolio"> GIS Analyst, </a></li>
-                <li id="item-4"><a href="https://sites.google.com/site/2013clayoquot/">Environmental Scientist,</a></li>
-                <li id="item-5"><a href="">Solution-focused critical-thinker.</a></li>
-            </ul>
-        </nav>
-        <figure>
-            <section class="mtcard">
-                <img src="./assets/images/image-7.jpg"
-                    alt="mount rainier in the back with a girl in front of it, on a ridge" />
-                <figcaption>Sunrse Ridge, Mt Rainier, WA</figcaption>
-            </section>
-        </figure>
-        <main>
-            <div class = "box1">
-            <section class="row justify-center">
-                <div class="card-column">
-                    <figure class="card code-card">
-                        <figure>
-                            <section class="smaller-pic">
-                                <img src="./assets/images/logo.jpg"
-                                    alt="nut variaty surrounded by Anu Rana's Healthy Kitchen txt" />
-                                <figcaption>Business & Logo Designed by Me</figcaption>
-                        </figure>
-                        <h2 class="card-header"><a href="https://www.anuranaskitchen.com/">Entreprenuer</a></h2>
-                        <div class="card-body">
-                            <p>Started a business from the ground up and have been successfully running it for the last
-                                eight years with continued growth and resilience.</p>
-                        </div>
-                    </figure>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
 
-                </div>
-            </section>
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black w3-grayscale" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">HI</span> I'M AVI.</h1>
+    <p>Solution-focused critical-thinker</p>
+    <img src="./assets/images/image-7.jpg"
+                    alt="mount rainier in the back with a girl in front of it, on a ridge" class="w3-image" width="992" height="1108"/> <figcaption>Sunrse Ridge, Mt Rainier, WA</figcaption>
+  </header>
 
-            <section class="row justify-center">
-                <div class="card-column">
-                    <figure class="card code-card">
-                        <figure>
-                            <section class="smaller-pic">
-                                <img src="./assets/images/image-0.png" alt="Uw continuing education logo" />
-                        </figure>
-                        <h3 class="card-header"><a href="https://github.com/AR31313">Web Developer</h3></a>
-                        <div class="card-body">
-                            <p>Earned Certificate in Full Stack Web Development from University of Washington. Skills in
-                                HTML, CSS & JavaScript; proficient with Microsoft Office, Adobe Photoshop, Esri & ArcGIS
-                                programs as well as Quickbooks. </p>
-                        </div>
-                    </figure>
-                </div>
-            </section>
-        </div>
-        <div class="box2">
-            <section class="row justify-center">
-                <div class="card-column">
-                    <figure class="card code-card">
-                        <figure>
-                            <section class="smaller-pic">
-                                <img src="./assets/images/image-6.jpg"
-                                    alt="poster of final GIS project with a girl infront of it" />
-                        </figure>
-                        <h4 class="card-header"><a href="https://yay4avi.wixsite.com/gisportfolio">GIS ANALYST</h4></a>
-                        <div class="card-body">
-                            <p>Earned Geographic Information Systems Certificate from University of Washington. Has
-                                Excellent cartographic techniques, spatial analysis ability & can create
-                                professional-quality graphic representations of social, environmental and economic
-                                conditions. </p>
-                        </div>
-                    </figure>
-                </div>
-            </section>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Avi Rana</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Front-end Web Developer with background in Business Management, Environmental Science with extensive GIS Experience. Earned Certificate in Full Stack Web Development, GIS and Bachelor of Science Degree from University of Washington. Skills in HTML, CSS & JavaScript; proficient with Microsoft Office, Esri & ArcGIS programs as well as Quickbooks.
+    </br>
+        Known as a highly motivated problem solver with a strong commitment to continually learning new things and developing myself professionally.
+    </p> </div>
 
-            <section class="row justify-center">
-                <div class="card-column">
-                    <figure class="card code-card">
-                        <figure>
-                            <section class="smaller-pic">
-                                <img src="./assets/images/image-1.jpg" alt="lab sampling" />
-                        </figure>
-                        <h5 class="card-header"><a href="https://sites.google.com/site/2013clayoquot/">Environmental
-                                Scientist</h5></a>
-                        <div class="card-body">
-                            <p>Earned Bachelor of Science with Environmental Focus from University of Washington.
-                                Extensive data analysis experience, field sampling, etc </p>
-                        </div>
-                    </figure>
-                </div>
-            </section>
+    <h3 class="w3-padding-6 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide"><a href="https://www.anuranaskitchen.com/">Entrepreneur</a>
+    </br></p>
 
-            <section class="row justify-center">
-                <div class="card-column">
-                    <figure class="card code-card">
-                        <figure>
-                            <section class="smaller-pic">
-                                <img src="./assets/images/image-5.jpg" alt="Analyzing data in a lab" />
-                        </figure>
-                        <h6 class="card-header"><a
-                                href="https://www.youtube.com/watch?v=Os5pcjprv70&ab_channel=AviRana">Solution-focused
-                                critical-thinker</h6></a>
-                        <div class="card-body">
-                            <p> Received a Sustainability minor From University of Washington. I have gained strong
-                                foundational understanding of local and global problems from a social, economic, and
-                                environmental perspective. Regularly use analytical skills necessary to solve internal
-                                and external problems from multiple angles to formulate the most effective and efficient
-                                solutions through observation, logic, and research. <br>
-                            </p>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Os5pcjprv70"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                            <p>Video Made by Me</p>
-                        </div>
-                    </figure>
-                </div>
-            </section>
-        </div>
-            <section>
-                <section class="row justify-center">
-                    <div class="card-column">
-                        <figure class="card code-card">
-                            <h7>CONTACT ME!</h7>
-                            <ul class="links">
-                                <li> <strong>Email:</strong>
-                                    <a href="mailto:gurlgotgame@gmail.com"> gurlgotgame@gmail.com</a>
-                                </li>
-                            </ul>
-                </section>
+    Started a business from the ground up and have been successfully running it for the last
+    eight years with continued growth and resilience.
 
+    <p class="w3-wide"><a href="https://github.com/AR31313">Web Developer </a></p>
+
+    Earned Certificate in Full Stack Web Development from University of Washington. Skills in
+    HTML, CSS & JavaScript; proficient with Microsoft Office, Adobe Photoshop, Esri & ArcGIS programs as well as Quickbooks.
+
+    <p class="w3-wide"><a href="https://yay4avi.wixsite.com/gisportfolio"> GIS Analyst </a></p>
+
+    Earned Geographic Information Systems Certificate from University of Washington. Has
+    Excellent cartographic techniques, spatial analysis ability & can create
+    professional-quality graphic representations of social, environmental and economic
+    conditions. 
+
+    <p class="w3-wide"><a href="https://sites.google.com/site/2013clayoquot/">Environmental Scientist</a></p>
+
+    Earned Bachelor of Science with Environmental Focus from University of Washington.
+    Extensive data analysis experience, field sampling, etc<br></p>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+       Collaborations
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">30+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">8+</span><br>
+        Years Experience
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2</span><br>
+        Language Spoken
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+</head>
+<!-- Portfolio Section -->
+<div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="https://aavillanueva6.github.io/NPSHikeSearchTool/"><img src="./assets/images/project1.png" style="width:100%"></a>
+        <a href="https://ar31313.github.io/password_generator/"><img src="./assets/images/project2.png" style="width:100%"></a>
+        <a href="https://yay4avi.wixsite.com/gisportfolio"><img src="./assets/images/image-6.jpg" style="width:100%"></a>
+        <a href="https://aavillanueva6.github.io/NPSHikeSearchTool/"><img src="./assets/images/image-8.jpg" style="width:100%"></a>
+    </div>
+
+      <div class="w3-half">
+        <a href="https://ar31313.github.io/scheduler/"><img src="./assets/images/project3.png" style="width:100%"></a>
+        <a href="https://sites.google.com/site/2013clayoquot/"><img src="./assets/images/image-5.jpg" style="width:100%"></a>
+        <a href="https://ar31313.github.io/scheduler/"><img src="./assets/images/image-3.jpg" style="width:100%"></a>
+        <a href="https://ar31313.github.io/scheduler/"><img src="./assets/images/image-0.png" style="width:100%"></a>
+      </div>
+    <!-- End photo grid -->
+    
+       
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Greater Seattle Area</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 206 XXX-XXXX</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: yay4avi@uw.edu</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
                 <footer>
                     <p>
                         &copy; Rana Services, Inc.
